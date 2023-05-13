@@ -1,3 +1,61 @@
 body {
   background: peachpuff;
 }
+* {
+  border: 1px solid red;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.container > * {
+  margin: 10px;
+}
+.a {
+background-color: blue ;
+flex-grow: 1;
+width: 100%;
+}
+.main{
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content:center;
+  
+}
+.main *{
+  height: 50%;
+  width: 30%;
+  margin: 0 5px;
+}
+.h {
+  background-color: purple;
+  width: 100%;
+  flex-grow: 3;
+  }
+  @media (min-width: 600px) {
+    .container{
+      height: 100vh;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      color: white;
+      justify-content: space-between;
+      text-align: center;}
+      
+    .main{
+      width: 65%;
+    }
+    .h{
+      width: 30%;
+      flex-grow: 2;
+    }  
+  }
+  
